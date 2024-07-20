@@ -24,5 +24,4 @@ add_executable(decision_tree_train src/parser/main_train.cpp
         src/parser/MainTrainer.h
 )
 
-# Используйте переменные, установленные find_package, для связи библиотеки TBB
 target_link_libraries(decision_tree_train PRIVATE Threads::Threads decision_tree TBB::tbb)
